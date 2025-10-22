@@ -1,16 +1,13 @@
-# Food Detection
+# Food Recognition System
 
-A food detection project using computer vision and machine learning.
+Real-time food detection using computer vision.
 
-## Getting Started
+## Features
 
-This project is currently in development.
-
-## Requirements
-
-- Python 3.x
-- OpenCV
-- TensorFlow/PyTorch (depending on the model used)
+- **Food Detection**: Detects food items in video streams
+- **Depth Estimation**: Shows proximity of detected objects
+- **Object Filtering**: Ignores laptop, person, chair objects
+- **Real-time Processing**: Optimized for live video analysis
 
 ## Installation
 
@@ -20,10 +17,31 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Run the Application
 ```bash
 python main.py
 ```
 
-## Contributing
+### iPhone Continuity Camera (MacBook)
+The application will automatically detect and prompt for Continuity Camera when available.
 
-Feel free to contribute to this project by submitting issues or pull requests.
+## Controls
+
+- `d`: Toggle depth estimation
+- `f`: Toggle focus mode
+- `q`: Quit
+
+## Requirements
+
+- Python 3.8+
+- OpenCV
+- YOLOv8 model (included)
+- MediaPipe (for gesture detection)
+
+## Files
+
+- `main.py`: Main application
+- `object_detector.py`: Object detection
+- `proximity_depth_estimator.py`: Depth estimation
+- `visualizer.py`: Display
+- `config.py`: Settings
